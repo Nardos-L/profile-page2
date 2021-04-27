@@ -24,7 +24,7 @@
                     <img src="images/user.jpg" alt="" alt="">
                 </div>
                 <div class="user-card">
-                    <h1>Nardos Lengo</h1>
+                    <h1 class="user-name">Nardos Lengo</h1>
                     <div class="location">
                         <img src="images/map-marker.png" alt="" class="icon">
                         <p>Seattle</p>
@@ -33,7 +33,7 @@
                     <p>Master of shadows and the Internet!</p>
                     <div class="gear">
                         <img src="images/gear.png" alt="">
-                        <button>edit profile</button>
+                        <button onclick="changeName()">edit profile</button>
                     </div>   
                 </div>
             </div>
@@ -52,24 +52,24 @@
                     <p><span class="span">2</span>Connection Requests</p>
                 </div>
                 <div class= "main-req">
-                    <div class="top-req">
+                    <div id="top-req1" class="top-req">
                         <img src="images/todd-s.jpg" alt="">
                         <p>Todd E</p>
-                        <img id="accept" src="images/accept-circle.png" alt="">
-                        <img id="decline" src="images/close-circle.png" alt="">
+                        <img onclick="increaseNumber(); removeUser();"  id="accept" src="images/accept-circle.png" alt="">
+                        <img onclick="removeUser(); ChangeNumber();" id="decline" src="images/close-circle.png" alt="">
                     </div>
-                    <div class="top-req">
+                    <div id="top-req2" class="top-req">
                         <img src="images/phil-s.jpg" alt="">
                         <p>Phill K</p>
-                        <img id="accept"  src="images/accept-circle.png" alt="">
-                        <img id="decline" src="images/close-circle.png" alt="">
+                        <img onclick="increaseNumber(); removeUser2();" id="accept"  src="images/accept-circle.png" alt="">
+                        <img onclick="removeUser2(); ChangeNumber();" id="decline" src="images/close-circle.png" alt="">
                     </div>
                 </div>
             </div>
             <div class="bottom-right">
                 <div class="con-req">
                     <div class="nav-con">
-                    <p><span class="span">500+</span>Your Connections</p>
+                    <p><span id="span2" class="span">500</span>Your Connections</p>
                     </div>
                 </div>
                 <div class="top-req">
@@ -95,4 +95,5 @@
         </div>
     </div>  
 </body>
+<script src="script.js"></script>
 </html>
