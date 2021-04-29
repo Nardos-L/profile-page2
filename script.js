@@ -1,14 +1,24 @@
 
-function changeName() {
-    var h1 = document.querySelector(".user-name");
-    h1.innerHTML = "John Doe";
+var input = document.querySelector("#fullname") ;
+var acceptButton = document.querySelector('#acceptbutton') ;
 
+
+function openInput() {    
+    input.style.visibility ="visible";
+    acceptButton.style.visibility ="visible";
+}
+
+function changeName() {
+    var fullName = document.querySelector(".user-name");
+    var newName = input.value;
+    fullName.innerHTML = newName;
+    input.style.visibility ="hidden";
+    acceptButton.style.visibility ="hidden";   
 }
 
 function removeUser(){
     var div = document.querySelector("#top-req1");
     div.remove();
-
 }
 
 function removeUser2(){

@@ -25,15 +25,17 @@
                 </div>
                 <div class="user-card">
                     <h1 class="user-name">Nardos Lengo</h1>
+                    <input type="text" id="fullname" name="fullname">
+                    <input type="checkbox" onclick="changeName()" id="acceptbutton">
                     <div class="location">
                         <img src="images/map-marker.png" alt="" class="icon">
                         <p>Seattle</p>
                     </div>
                     <p>Developer | Engineer | Problem Solver</p>
                     <p>Master of shadows and the Internet!</p>
-                    <div class="gear">
+                    <div class="gear" >
                         <img src="images/gear.png" alt="">
-                        <button onclick="changeName()">edit profile</button>
+                        <button onclick="openInput()">edit profile</button>
                     </div>   
                 </div>
             </div>
@@ -55,7 +57,7 @@
                     <div id="top-req1" class="top-req">
                         <img src="images/todd-s.jpg" alt="">
                         <p>Todd E</p>
-                        <img onclick="increaseNumber(); removeUser();"  id="accept" src="images/accept-circle.png" alt="">
+                        <img onclick="increaseNumber(); removeUser();"  id="accept1" src="images/accept-circle.png" alt="">
                         <img onclick="removeUser(); ChangeNumber();" id="decline" src="images/close-circle.png" alt="">
                     </div>
                     <div id="top-req2" class="top-req">

@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-#accept {
+#accept,#accept1 {
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -70,8 +70,7 @@
 .location {
     display: flex;
     align-items: center;
-    margin-top: 5px;
-    margin-bottom: 15px; 
+    margin-bottom: 5px; 
 }
 
 
@@ -235,4 +234,7 @@
     border: none;
     text-decoration: underline;
     color: rgb(42, 162, 209);
+}
+.user-card input, #acceptbutton {
+   visibility: hidden;
 }
